@@ -8,11 +8,10 @@ import { Component, Prop, h, getAssetPath } from '@stencil/core';
 
 
 export class FcIcon {
-  @Prop() name: string;
-  @Prop() size:number;
-  @Prop() color: string;
-
-  
+  //defining props here
+  @Prop() name: string; //the name of the icon
+  @Prop() size:number; //the size (width and height)
+  @Prop() color: string; //the color of the icon  
  
   render() { 
     const SVGsource = getAssetPath(`./assets/${this.name}.svg`);
